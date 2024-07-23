@@ -15,10 +15,10 @@ class NewPassport {
      String cpth;
 
     // method
-    public  boolean createPassPort(String cprLocation, int dcdrLocation, String surName, String givenName, String dob,String email, boolean isEmailLoginSame, String loginId, String pwd, String confirmPwd, String hintQuestion, String hintAns,String captcha)
+    public NewPassport(String cprLocation, int dcdrLocation, String surName, String givenName, String dob,String email, boolean isEmailLoginSame, String loginId, String pwd, String confirmPwd, String hintQuestion, String hintAns,String captcha)
 	{
 	    System.out.println("The createPassPort() started:..");
-	    boolean isPassPortCreated = false;
+	    /*boolean isPassPortCreated = false;
 		boolean iscprLocationValid=false;
 		boolean isDcdrLocationValid =false;
 		boolean issurnameValid = false;
@@ -31,146 +31,146 @@ class NewPassport {
 		boolean isConfirmPasswordValid=false;
 		boolean isHintQuestion=false;
 		boolean isHintAnswerValid=false;
-		boolean iscaptchavalid=false;
+		boolean iscaptchavalid=false;*/
 	 
 
         if(cprLocation != null)
         {
             this.cprLoc = cprLocation;
-            iscprLocationValid=true;
+            //iscprLocationValid=true;
             
         }
         else
         {
             System.out.println("please provide valid cpr Location..");
-			return iscprLocationValid;
+			//return iscprLocationValid;
             
         }
 
         if	(dcdrLocation > 0 )
         {
             this.dcdrLoc  =  dcdrLocation ;
-            isDcdrLocationValid = true;
+            //isDcdrLocationValid = true;
         }
         else
         {
             System.out.println("Please provide valid dcdrLocation");
-            return isDcdrLocationValid;
+            //return isDcdrLocationValid;
         }	
         if( surName != null)
         {
             this.surNm = surName; 
-            issurnameValid=true;
+            //issurnameValid=true;
         }
         else
         {
             System.out.println("provide proper valid surnane");
-			return issurnameValid;
+			//return issurnameValid;
         }
         if(givenName  != null)
         {
             this.givenNm = givenName;
-            isGivenNameValid=true;
+            //isGivenNameValid=true;
         }
         else
         {
             System.out.println("Provide proper name");
-			return isGivenNameValid;
+			//return isGivenNameValid;
         }
         if(dob!=null)
         {
             this.db = dob;
-            isDobValid=true;	
+            //isDobValid=true;	
         }
         else
         {
             System.out.println("Provide valid DOB");
-			return isDobValid;
+			//return isDobValid;
         }
 
         if(email!=null)
         {
             this.eml = email;
-            isEmailValid=true;	 
+            //isEmailValid=true;	 
         }
         else
         {
             System.out.println("Provide valid email..");
-			return isEmailValid;
+			//return isEmailValid;
         }
         if(isEmailLoginSame!=false)
         {
             this.iseMailSame = isEmailLoginSame;
-            isEmailsameValid=true;
+            //isEmailsameValid=true;
         }
         else
         {
         System.out.println("provide valid Email..");
-            return isEmailsameValid;
+            //return isEmailsameValid;
         }
         if(loginId!=null)
         {
             this.lgnId = loginId;
-            islgnValid=true;	
+            //islgnValid=true;	
         }
         else
         {
             System.out.println("provide valid login Id...");
-            return islgnValid;
+            //return islgnValid;
         }
         if( pwd!=null)
         {
             this.passWord = pwd;
-            isPassWordValid=true;	
+            //isPassWordValid=true;	
         }
         else
         {
             System.out.println("Provide vlid password");
-            return isPassWordValid;
+            //return isPassWordValid;
         }
         if(confirmPwd!=null)
         {
             this.cnfrPwd = confirmPwd; 
-            isConfirmPasswordValid=true;	
+            //isConfirmPasswordValid=true;	
         }
         else
         {
             System.out.println("provide valid confirm passWord");
-            return isConfirmPasswordValid;
+           // return isConfirmPasswordValid;
         }
         if(hintQuestion!=null)
         {
             this.hntQues = hintQuestion;
-            isHintQuestion=true;	
+            //isHintQuestion=true;	
         }
         else
         {
             System.out.println("Provide valid HInt Qusetion");
-            return isHintQuestion;
+            //return isHintQuestion;
         }
         if(hintAns!=null)
         {
             this.hntAns = hintAns; 
-            isHintAnswerValid=true;
+            //isHintAnswerValid=true;
         }
         else{
             System.out.println("Provide valid Hint Answer");
-			return isHintAnswerValid;
+			//return isHintAnswerValid;
         }
         if( captcha!=null)
         {
             this.cpth = captcha;
-            iscaptchavalid=true;
+            //iscaptchavalid=true;
         }
         else{
             System.out.println("provide valid capcha....");
-            return iscaptchavalid;
+            //return iscaptchavalid;
         }
         
-        isPassPortCreated=true;
+        //isPassPortCreated=true;
         System.out.println("passport Cretaed..");
         
-        return isPassPortCreated;
+        
     }
 	 
 	 
